@@ -164,16 +164,49 @@ footer .heart { color:var(--clay) }
   .skills-grid { grid-template-columns:repeat(2,1fr) }
   .about-wrap, .contact-wrap { grid-template-columns:1fr; gap:40px }
 }
-@media(max-width:768px) {
-  section { padding:72px 0 }
-  .nav-links, .nav-actions .btn { display:none }
-  .hamburger { display:flex }
-  .projects-grid { grid-template-columns:1fr }
-  .skills-grid { grid-template-columns:1fr }
-  .highlights { grid-template-columns:repeat(2,1fr) }
-  .hero { padding-top:130px }
-  .hf-banner { padding:48px 28px }
-}
+  @media(max-width:768px){
+
+    section{
+        padding:72px 0;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .nav-actions{
+        display:flex;
+        align-items:center;
+    }
+
+    .nav-actions .btn{
+        display:none;
+    }
+
+    .hamburger{
+        display:flex;
+    }
+
+    .projects-grid{
+        grid-template-columns:1fr;
+    }
+
+    .skills-grid{
+        grid-template-columns:1fr;
+    }
+
+    .highlights{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .hero{
+        padding-top:130px;
+    }
+
+    .hf-banner{
+        padding:48px 28px;
+    }
+  }
 @media(max-width:420px) {
   .hero-btns { flex-direction:column }
   .hero-btns .btn { width:100%; justify-content:center }
