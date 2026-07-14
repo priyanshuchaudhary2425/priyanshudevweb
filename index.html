@@ -164,49 +164,16 @@ footer .heart { color:var(--clay) }
   .skills-grid { grid-template-columns:repeat(2,1fr) }
   .about-wrap, .contact-wrap { grid-template-columns:1fr; gap:40px }
 }
-  @media(max-width:768px){
-
-    section{
-        padding:72px 0;
-    }
-
-    .nav-links{
-        display:none;
-    }
-
-    .nav-actions{
-        display:flex;
-        align-items:center;
-    }
-
-    .nav-actions .btn{
-        display:none;
-    }
-
-    .hamburger{
-        display:flex;
-    }
-
-    .projects-grid{
-        grid-template-columns:1fr;
-    }
-
-    .skills-grid{
-        grid-template-columns:1fr;
-    }
-
-    .highlights{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .hero{
-        padding-top:130px;
-    }
-
-    .hf-banner{
-        padding:48px 28px;
-    }
-  }
+@media(max-width:768px) {
+  section { padding:72px 0 }
+  .nav-links, .nav-actions .btn { display:none }
+  .hamburger { display:flex }
+  .projects-grid { grid-template-columns:1fr }
+  .skills-grid { grid-template-columns:1fr }
+  .highlights { grid-template-columns:repeat(2,1fr) }
+  .hero { padding-top:130px }
+  .hf-banner { padding:48px 28px }
+}
 @media(max-width:420px) {
   .hero-btns { flex-direction:column }
   .hero-btns .btn { width:100%; justify-content:center }
@@ -215,7 +182,7 @@ footer .heart { color:var(--clay) }
   .proj-links .btn { width:100%; justify-content:center }
 }
 </style>
-
+<base target="_blank">
 </head>
 <body>
 
@@ -244,7 +211,7 @@ footer .heart { color:var(--clay) }
   <a href="#models">Models</a>
   <a href="#education">Education</a>
   <a href="#contact">Contact</a>
-  <a href="./priyanshu_resume.pdf" download class="btn btn-primary" style="margin-top:16px;width:100%;justify-content:center">Download Resume</a>
+  <a href="./resume.pdf" download class="btn btn-primary" style="margin-top:16px;width:100%;justify-content:center">Download Resume</a>
 </div>
 
 <header class="hero" id="home">
@@ -255,7 +222,7 @@ footer .heart { color:var(--clay) }
     <p class="tagline">Building scalable web applications and transforming ideas into production-ready AI/ML solutions.</p>
     <div class="hero-btns">
       <a href="#contact" class="btn btn-primary">Hire Me</a>
-      <a href="./priyanshu_resume.pdf" download class="btn btn-outline">Download Resume</a>
+      <a href="./resume.pdf" download class="btn btn-outline">Download Resume</a>
     </div>
   </div>
 </header>
